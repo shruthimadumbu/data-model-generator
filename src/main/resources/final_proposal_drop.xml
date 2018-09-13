@@ -1,0 +1,5 @@
+<DataModelGenerator operation="DELETE" dataBaseName="">
+	<table 	name="Customer" 
+			newtablename=""> 
+	</table>	
+</DataModelGenerator>

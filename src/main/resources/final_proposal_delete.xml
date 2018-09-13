@@ -1,0 +1,28 @@
+<DataModelGenerator operation="DELETE" dataBaseName="">
+	<table 	name="Customer" 
+			newtablename=""> 
+		<columns>			
+			<column>
+				<id>1</id>
+				<name>imsi</name>
+				<type>bigint</type>
+				<newName>imsi1</newName>
+				<newType>INT</newType>
+			</column>
+			<column>
+				<id>2</id>
+				<name>name</name>
+				<type>ARRAY=String</type>
+				<newName></newName>
+				<newType></newType>
+			</column>					
+			<column>
+				<id>3</id>
+				<name>deductions</name>
+				<type>MAP=String|String</type>
+				<newName></newName>
+				<newType></newType>
+			</column>			
+		</columns>
+	</table>	
+</DataModelGenerator>

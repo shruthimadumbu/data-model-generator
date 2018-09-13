@@ -1,0 +1,53 @@
+<DataModelGenerator operation="CREATE/UPDATE/DELETE" dataBaseName="">
+	<table 	name="table-name" 
+			newtablename=""> 
+		<tableProperties>
+			<storageFormat>TEXTFILE/RCFILE/ORCFILE</storageFormat>
+			<fieldsTerminator></fieldsTerminator>
+			<collectionItemsTerminator>$</collectionItemsTerminator>
+			<mapKeyTerminator>#</mapKeyTerminator>
+			<partition>
+				<columnName>department</columnName>
+				<dataType>string</dataType>
+			</partition>
+			<bucketing>
+				<columnName>department</columnName>
+				<dataType>string</dataType>
+				<numberOfBuckets></numberOfBuckets>
+			</bucketing>
+		
+		</tableProperties>
+		<columns>			
+			<column>
+				<id>1</id>
+				<name>imsi</name>
+				<type>bigint</type>
+				<newName>imsi1</newName>
+				<newType>INT</newType>
+			</column>
+			<column>
+				<id>2</id>
+				<name>name</name>
+				<type>ARRAY</type>
+				<newName></newName>
+				<newType></newType>
+			</column>
+					
+			<column>
+				<id>2</id>
+				<name>deductions</name>
+				<type>MAP=String|String</type>
+				<newName></newName>
+				<newType></newType>
+			</column>
+			
+			<column>
+				<id>2</id>
+				<name>address</name>
+				<type>STRUCT=doorNo:String|city:String|pinCode:BIGINT</type>
+				<newName></newName>
+				<newType></newType>
+			</column>
+		</columns>
+	</table>	
+</DataModelGenerator>
