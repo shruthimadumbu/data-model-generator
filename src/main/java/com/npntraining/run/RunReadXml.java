@@ -8,7 +8,11 @@ import javax.xml.bind.Unmarshaller;
 
 import com.npntraining.generator.Generator;
 import com.npntraining.model.DataModelGenerator;
-
+/**
+ * 
+ * @author shruthimadumbu
+ *
+ */
 public class RunReadXml {
 
 	public static void main(String[] args) throws JAXBException {
